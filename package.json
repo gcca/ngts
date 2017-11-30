@@ -1,0 +1,39 @@
+{
+  "author": "cristhian.gz <gcca@gcca.tk>",
+  "dependencies": {
+    "@uirouter/angularjs": "^1.0.11",
+    "angular": "^1.6.7"
+  },
+  "description": "Ng TS Catalog",
+  "devDependencies": {
+    "@types/angular": "^1.6.39",
+    "@types/angular-mocks": "^1.5.11",
+    "@types/angular-ui-router": "^1.1.40",
+    "@types/jasmine": "^2.8.2",
+    "@types/systemjs": "^0.20.6",
+    "angular-mocks": "^1.6.7",
+    "babel-polyfill": "^6.26.0",
+    "concurrently": "^3.5.1",
+    "jasmine-core": "^2.8.0",
+    "karma": "^1.7.1",
+    "karma-jasmine": "^1.1.0",
+    "karma-phantomjs-launcher": "^1.0.4",
+    "lite-server": "^2.3.0",
+    "phantomjs-prebuilt": "^2.1.16",
+    "systemjs": "^0.20.19",
+    "typescript": "^2.6.2"
+  },
+  "license": "GPL-2.0",
+  "main": "lib/index.js",
+  "name": "ngts-catalog",
+  "private": false,
+  "repository": "git@github.com:gcca/ngts-catalog.git",
+  "scripts": {
+    "compile": "tsc -p src/",
+    "serve": "lite-server -c bs-conf.json",
+    "start": "concurrently \"npm run watch\" \"npm run serve\"",
+    "test": "karma start",
+    "watch": "npm run compile -- -w"
+  },
+  "version": "0.0.0"
+}
